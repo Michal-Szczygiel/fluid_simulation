@@ -1,0 +1,10 @@
+{
+    "mass_distr_file_path": "mass_distr/mass.bmp",
+    "output_directory_path": "frames",
+    "frames_number": 500,
+    "simulation_factor": 8,
+    "target_resolution": 1080,
+    "flow_field_scale": 300.0,
+    "dynamize_flow_field": false,
+    "randomize_flow_field": true
+}
