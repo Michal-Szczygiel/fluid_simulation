@@ -11,7 +11,7 @@ Dołączony plik konfiguracyjny '**config.json**' zawiera następującje klucze 
   - simulation_factor - mnożnik szybkości symulacji,
   - target_resolution - docelowa rozdzielczość generowanych klatek (obsługiwane rozdzielczości: 480, 720, 1080, 1440, 2160),
   - flow_field_scale - skalowanie pola wektorowego (aby otrzymać "gęste" pole wektorowe (z dużą ilościa małych wirów) zmniejsz ten parametr),
-  - dynamize_flow_field - randomizacja pola wektorowego w trakcie symulacji,
+  - dynamize_flow_field - randomizacja pola wektorowego w trakcie symulacji (symulacja dość powolna w przypadku '**true**'),
   - randomize_flow_field - randomizacja początkowego stanu pola wektorowego
 
 Wygenerowane klatki można złożyć w animację np. przy użyciu '**Edytora wideo**' (Windows).
