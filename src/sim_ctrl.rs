@@ -129,7 +129,7 @@ pub fn run(configuration_file_path: &str) -> Result<(), Box<dyn Error>> {
                         config.flow_field_scale,
                         offset_x,
                         offset_y,
-                        offset_z + (frame * config.simulation_factor + step) as f64,
+                        offset_z + (frame * config.simulation_factor + step) as f64 * 0.3,
                     );
 
                     simulate(&flow_field, &mut mass_distr, &mut mass_buffer, res_x, res_y)
@@ -201,7 +201,7 @@ pub fn run(configuration_file_path: &str) -> Result<(), Box<dyn Error>> {
                         config.flow_field_scale,
                         0.0,
                         0.0,
-                        (frame * config.simulation_factor + step) as f64,
+                        (frame * config.simulation_factor + step) as f64 * 0.3,
                     );
 
                     simulate(&flow_field, &mut mass_distr, &mut mass_buffer, res_x, res_y)
