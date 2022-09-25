@@ -19,9 +19,9 @@ Wygenerowane klatki można złożyć w animację np. przy użyciu '**Edytora wid
 ## Efekt działania programu:
 ![](https://github.com/Michal-Szczygiel/fluid_simulation/blob/main/fluid_sim.gif)
 
-Początkowy rozkład masy pochodzi z pliku graficznego
+Początkowy rozkład masy pochodzi z pliku graficznego (w tym przypadku była to bitmapa przygotowana w MS Paint)
 
 
 ![](https://github.com/Michal-Szczygiel/fluid_simulation/blob/main/fluid_sim_2.gif)
 
-Początkowym rozkładem masy może być dosłownie cokolwiek 🎲
+Początkowym rozkładem masy może być dowolny obraz 🎲
