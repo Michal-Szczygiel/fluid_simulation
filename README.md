@@ -19,7 +19,7 @@ Wygenerowane klatki można złożyć w animację np. przy użyciu '**Edytora wid
 ## Efekt działania programu:
 ![](https://github.com/Michal-Szczygiel/fluid_simulation/blob/main/fluid_sim.gif)
 
-Początkowy rozkład masy pochodzi z pliku graficznego (powyżej bitmapa była pieczołowicie przygotowana w MS Paint)
+Początkowy rozkład masy pochodzi z pliku graficznego
 
 
 ![](https://github.com/Michal-Szczygiel/fluid_simulation/blob/main/fluid_sim_2.gif)
