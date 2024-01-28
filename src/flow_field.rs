@@ -52,32 +52,4 @@ pub fn generate_flow_field(
         value.x = value.x / max_magnitude;
         value.y = value.y / max_magnitude;
     });
-
-    /*
-    for y in 0..res_y {
-        for x in 0..res_x {
-            noise_buffer[y * res_x + x] = noise.get([
-                (x as f64 - offset_x) / scale,
-                (y as f64 - offset_y) / scale,
-                offset_z / scale,
-            ]) as f32;
-        }
-    }
-
-    for y in 1..res_y - 1 {
-        for x in 1..res_x - 1 {
-            flow_field[y * res_x + x] = Vec2D {
-                x: (noise_buffer[(y + 1) * res_x + x] - noise_buffer[(y - 1) * res_x + x]) as f32,
-                y: -(noise_buffer[y * res_x + x + 1] - noise_buffer[y * res_x + x - 1]) as f32,
-            };
-
-            max_magnitude = max_magnitude.max(flow_field[y * res_x + x].length());
-        }
-    }
-
-    for vec in flow_field.iter_mut() {
-        (*vec).x /= max_magnitude;
-        (*vec).y /= max_magnitude;
-    }
-    */
 }

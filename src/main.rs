@@ -53,7 +53,7 @@ fn main() {
         None => {
             eprintln!(
                 "{}\n\n{}\n",
-                style("Podaj ścieżkę do pliku konfiguracyjnego...")
+                style("Provide path to the configuration file...")
                     .bold()
                     .yellow(),
                 wojak
@@ -64,7 +64,7 @@ fn main() {
 
     match run(config_file_path) {
         Ok(_) => {
-            let message = style("Zakończono symulację!").bold().green();
+            let message = style("Simulation complete!").bold().green();
             println!("{}\n\n{}\n", message, pikachu);
         }
         Err(error) => {

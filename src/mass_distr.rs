@@ -25,7 +25,7 @@ pub fn load_mass_distribution(
             } else {
                 return Err(format!(
                     "Error: load_mass_distribution -> \
-                wskazany plik z rozkładem masy posiada rozdzielczość wyższą niż docelowa!"
+                indicated file with mass distribution has higher resolution than the target one!"
                 )
                 .into());
             }

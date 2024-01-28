@@ -17,36 +17,36 @@ pub struct Configuration {
 impl Configuration {
     pub fn check(&self) -> Result<(), Box<dyn Error>> {
         if self.mass_distr_file_path == "" {
-            return Err("Configuration Error: wartość parametru \'mass_distr_file_path\' nie może być literałem pustym!".into());
+            return Err("Configuration Error: value of the parameter \'mass_distr_file_path\' cannot be an empty literal!".into());
         }
         if Path::new(&self.mass_distr_file_path).is_file() == false {
             return Err(format!(
-                "Configuration Error: plik \'{}\' nie istnieje!",
+                "Configuration Error: file \'{}\' does not exist!",
                 self.mass_distr_file_path
             )
             .into());
         }
         if self.output_directory_path == "" {
-            return Err("Configuration Error: wartość parametru \'output_directory_path\' nie może być literałem pustym!".into());
+            return Err("Configuration Error: value of the parameter \'output_directory_path\' cannot be an empty literal!".into());
         }
         if Path::new(&self.output_directory_path).is_dir() == false {
             return Err(format!(
-                "Configuration Error: katalog \'{}\' nie istnieje!",
+                "Configuration Error: directory \'{}\' does not exist!",
                 self.output_directory_path
             )
             .into());
         }
         if self.simulation_factor == 0 {
-            return Err("Configuration Error: wartość parametru \'simulation_factor\' nie może być równa 0!".into());
+            return Err("Configuration Error: value of the parameter \'simulation_factor\' can not be equal to 0!".into());
         }
         if self.flow_field_scale < 1.0 {
-            return Err("Configuration Error: wartość parametru \'flow_field_scale\' nie może być mniejsza od 1.0!".into());
+            return Err("Configuration Error: value of the parameter \'flow_field_scale\' can not be less than 1.0!".into());
         }
 
         match self.target_resolution {
             480 | 720 | 1080 | 1440 | 2160 => {}
             _ => {
-                return Err("Configuration Error: parametr \'target_resolution\' powinien przyjmować wartości ze zbioru {480, 720, 1080, 1440, 2160}!".into());
+                return Err("Configuration Error: parameter \'target_resolution\' should take value from the set: {480, 720, 1080, 1440, 2160}!".into());
             }
         }
 

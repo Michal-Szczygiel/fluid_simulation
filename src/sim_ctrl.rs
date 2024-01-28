@@ -18,8 +18,8 @@ pub fn run(configuration_file_path: &str) -> Result<(), Box<dyn Error>> {
         Ok(file) => file,
         Err(error) => {
             return Err(format!(
-                "Configuration File Error: nie można otworzyć pliku konfiguracyjnego! \
-            Szczegóły: {}",
+                "Configuration File Error: cannot open configuration file! \
+            Details: {}",
                 error
             )
             .into());
@@ -30,8 +30,8 @@ pub fn run(configuration_file_path: &str) -> Result<(), Box<dyn Error>> {
         Ok(config) => config,
         Err(error) => {
             return Err(format!(
-                "Configuration File Error: nie można odczytać zawartości pliku konfiguracyjnego! \
-            Szczegóły: {}",
+                "Configuration File Error: contents of the configuration file cannot be read! \
+            Details: {}",
                 error
             )
             .into());
@@ -49,7 +49,7 @@ pub fn run(configuration_file_path: &str) -> Result<(), Box<dyn Error>> {
         "{}\n  - mass_distr_file_path:   {}\n  - output_directory_path:  {}\n  - frames_number:          {}\
         \n  - simulation_factor:      {}\n  - target_resolution:      {}\n  - flow_field_scale:       {}\
         \n  - dynamize_flow_field:    {}\n  - randomize_flow_field:   {}\n",
-        style("Rozpoczynam symulację z następującymi parametrami:")
+        style("Starting the simulation with the following parameters:")
             .bold()
             .underlined()
             .green(),
